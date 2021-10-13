@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width initial-scale=1.0">
+	<title>Project_Survey_Form</title>
+	<link rel="stylesheet" type="text/css" href="Project_Survey_Form.css">
+</head>
+<body>
+   <h1 id="title">Random Survey</h1>
+   <p id="description">Please take a moment to fill out the survey below.</p>
+   <div class="signupform">
+   <form id="survey-form">
+
+   	<div class="inputContainer">
+   		<input type="text" class="input" id="name" required placeholder="name"></input>
+   		<label for="name" id="name-label" class="label" >name</label>
+   	</div>
+   	<br>
+   	
+   	<div class="inputContainer">
+   		<input type="email" class="input" id="email" placeholder="username@domain-name.com" required></input>
+   		<label for="email" class="label" id="email-label" required>email</label>
+   	</div>
+   	<br>
+
+   	<div class="inputContainer">
+   		<input type="number" required class="input" id="number" placeholder="pin" min="0" max="9"></input>
+   		<label for="pin" class="label"  id="number-label" required >pin</label>
+   	</div>
+   	<br>
+
+<label for="dropdown" id="gender">Select gender</label>
+<select id="dropdown">
+      <option value="Male">Male</option>   
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+
+
+
+<br>
+<br>
+</select>
+<br>
+<br>
+<input type="checkbox"value="personality" name="personality">
+<label for="personality" id="personality" ><b>Personality</b></label>
+
+<input type="checkbox" value="personality1" name="personality">
+<label for="personality"><input id="personality" type="radio" value="personality1" name="personality">Personality 1</label>
+<input type="checkbox" value="personality1" name="personality">
+<label for="personality"><input id="personality" type="radio" value="personality2" name="personality">Personality 2</label>
+<input type="checkbox" value="personality1" name="personality">
+<label for="personality"><input id="personality" type="radio" value="personality3" name="personality">Personality 3</label>
+<br>
+<br>
+
+<label for="additional_comments">Additional Comments:</label>
+<br>
+<br>
+<textarea id="additional_comments" name="additional_comments" rows="30" cols="50"></textarea>
+
+<button type="submit" id="submit" form="survey-form" value="Submit"><b>Submit</b></button>
+   	
+   </form>
+</body>
+</html>
